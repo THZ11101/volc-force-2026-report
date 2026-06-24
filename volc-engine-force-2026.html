@@ -1501,8 +1501,8 @@ section {
       <span class="live-dot">LIVE INSIGHT</span>
     </div>
     <div class="metric-strip">
-      <div class="metric-chip"><strong>19</strong><span>深度章节</span></div>
-      <div class="metric-chip"><strong>53</strong><span>引用来源</span></div>
+      <div class="metric-chip"><strong>22</strong><span>深度章节</span></div>
+      <div class="metric-chip"><strong>62</strong><span>引用来源</span></div>
       <div class="metric-chip"><strong>180万亿</strong><span>日均 Token 调用</span></div>
       <div class="metric-chip"><strong>49.5%</strong><span>MaaS 市场份额</span></div>
     </div>
@@ -1550,7 +1550,7 @@ section {
 
 <div class="search-panel" role="search">
   <input id="reportSearch" type="search" placeholder="搜索报告内容，例如：扣子、飞连、Viking、AI Trust、HiAgent、Token">
-  <div class="search-count" id="searchCount">19 CHAPTERS</div>
+  <div class="search-count" id="searchCount">22 CHAPTERS</div>
 </div>
 
 <!-- ===== TOC ===== -->
@@ -1575,6 +1575,9 @@ section {
     <li><a href="#arkclaw">ArkClaw 企业版：安全可控的 AI 生产力平台</a></li>
     <li><a href="#feilian">飞连 AI：AI 时代的 IT 管理新范式</a></li>
     <li><a href="#viking">Viking / OpenViking：面向 Agent 的上下文数据库</a></li>
+    <li><a href="#methodology">研究方法与证据分级</a></li>
+    <li><a href="#internet-synthesis">全网资料重构后的十大核心结论</a></li>
+    <li><a href="#risks-verification">争议口径、风险与待核验清单</a></li>
     <li><a href="#action">团队行动建议</a></li>
   </ol>
 </nav>
@@ -3092,9 +3095,203 @@ section {
   </div>
 </section>
 
-<!-- ===== 19. ACTION ITEMS ===== -->
+<!-- ===== 19. METHODOLOGY ===== -->
+<section id="methodology">
+  <span class="section-num">19 / RESEARCH METHODOLOGY</span>
+  <h2>研究方法与证据分级</h2>
+  <p class="section-desc">本次重构版不再只把大会内容视为现场记录，而是按“官方事实、权威媒体交叉验证、社区与社媒线索、待核验传闻”四层证据体系重新梳理。目标是把报告从会后纪要升级为可用于团队决策的行业判断文档。</p>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon blue">P0</div>
+      <h4>官方与产品文档</h4>
+      <p>优先采用火山引擎大会页、Seed 官方发布页、火山方舟模型列表与价格页、飞连和 OpenViking 官方文档。官方活动页可验证大会日期、议程、展区、体验区等基础事实；Seed 官方发布页可验证 Seed2.1 的产品方向与上线入口；方舟文档可验证模型 ID、上下文窗口、限流和价格。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon purple">P1</div>
+      <h4>权威媒体与专访</h4>
+      <p>36氪专访、长江日报、财联社/新浪财经、时代周报等用于交叉验证战略表述、客户规模、Token 调用量、产业案例和争议回应。媒体内容用于补充官方页未展开的采访信息，但涉及收入、份额、客户量等关键数字时仍需注明出处与口径。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon green">P2</div>
+      <h4>专业社区与技术解读</h4>
+      <p>CSDN、技术博客、开发者社区可提供演示细节、开发者视角和使用体验线索，但不作为核心定量结论的唯一依据。此类资料适合帮助判断开发者关注点、传播热词和落地场景优先级。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon orange">P3</div>
+      <h4>公众号、短视频与社媒线索</h4>
+      <p>公众号、短视频平台、微博和资讯转载常出现更早的传播片段，但部分正文无法稳定抓取，或存在转载改写、标题党、二次剪辑问题。因此本报告只把这类内容作为舆论线索和待核验清单，不把无法回溯原始出处的内容写成确定事实。</p>
+    </div>
+  </div>
+
+  <h3>本次重构的核心原则</h3>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>原则</th>
+          <th>执行方式</th>
+          <th>对报告结论的影响</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>官方事实优先</td>
+          <td>大会页确认议程、论坛、展区；Seed 官方页确认三大能力方向；方舟文档确认模型规格与价格。<sup><a href="#cite-54">[54]</a></sup><sup><a href="#cite-55">[55]</a></sup><sup><a href="#cite-56">[56]</a></sup><sup><a href="#cite-57">[57]</a></sup></td>
+          <td>把“发布了什么、开放到哪里、产品参数如何”作为硬事实。</td>
+        </tr>
+        <tr>
+          <td>媒体交叉验证</td>
+          <td>用 36氪专访、长江日报、36氪时间线、网易转载雷峰网等材料验证战略口径和产业案例。<sup><a href="#cite-58">[58]</a></sup><sup><a href="#cite-59">[59]</a></sup><sup><a href="#cite-60">[60]</a></sup><sup><a href="#cite-61">[61]</a></sup></td>
+          <td>把“行业怎么解读、争议怎么回应、落地价值在哪里”纳入判断。</td>
+        </tr>
+        <tr>
+          <td>传闻不前置</td>
+          <td>对于 Seedance 收入、短漫剧赛道占比、社媒爆款片段等无法稳定核验内容，仅列入风险与待核验。</td>
+          <td>避免把传播热度误判为商业事实。</td>
+        </tr>
+        <tr>
+          <td>口径差异显性化</td>
+          <td>官方活动体验区仍展示“120万亿日均 token 使用量”，媒体会后报道出现“180万亿日均 Token”口径。<sup><a href="#cite-54">[54]</a></sup><sup><a href="#cite-58">[58]</a></sup></td>
+          <td>报告不简单二选一，而是解释为不同页面更新时间或统计窗口差异。</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="callout warning">
+    <div class="callout-title">证据边界说明</div>
+    <p>“全网资料”在实际研究中不能等同于“所有内容均可验证”。短视频、公众号和微博可提供传播线索，但若无法稳定抓取原文、无法回溯采访对象或无法确认数据口径，本报告不会将其作为核心判断依据。报告更重视可复核、可点击、可追溯的信息链。</p>
+  </div>
+</section>
+
+<!-- ===== 20. INTERNET SYNTHESIS ===== -->
+<section id="internet-synthesis">
+  <span class="section-num">20 / INTERNET SYNTHESIS</span>
+  <h2>全网资料重构后的十大核心结论</h2>
+  <p class="section-desc">综合官方资料、媒体专访、产业报道、技术文档与社区传播线索，本次大会最重要的变化不是单点模型发布，而是火山引擎把“模型能力、Agent 平台、云原生基础设施、安全治理和产业分发”重新打包成一套 AI 云操作系统。</p>
+
+  <h3>结论一：火山引擎正在从 MaaS 供应商升级为 AI 云操作系统</h3>
+  <p>大会官方页本身已经不是单一新品发布会，而是围绕主论坛、产品分论坛、行业分论坛、开发者分论坛和 10000㎡体验展区组织的完整生态事件。<sup><a href="#cite-54">[54]</a></sup>结合媒体对谭待的专访，火山引擎正在把 MaaS 视为云业务的一部分，并进一步把 Agent、工具链、安全、数据基础设施纳入“AI 云原生”叙事。<sup><a href="#cite-58">[58]</a></sup>因此，本报告应把火山引擎理解为“AI 原生云基础设施厂商”，而不是单纯的模型 API 供应商。</p>
+
+  <h3>结论二：豆包 2.1 的真正卖点是生产力闭环，而不是跑分</h3>
+  <p>Seed 官方发布页明确把 Seed2.1 定义为“面向真实生产力场景”的智能体，并把通用 Agent、Coding、多模态三项能力作为主线。<sup><a href="#cite-55">[55]</a></sup>官方还披露 Seed2.1 Pro 在真实代码仓库众测开发者评估中，相比 Claude Opus 4.6 获得 59.1% 胜率；这类评估的意义在于更接近需求理解、多文件修改、环境搭建和结果验证的真实工程链路。<sup><a href="#cite-55">[55]</a></sup>换言之，豆包 2.1 的核心叙事应从“参数与基准”转向“端到端交付稳定性”。</p>
+
+  <h3>结论三：价格与限流让豆包 2.1 具备规模化试点基础</h3>
+  <p>方舟模型列表显示，doubao-seed-2-1-pro-260628 与 doubao-seed-2-1-turbo-260628 均支持 256k 上下文窗口，最大 RPM 500、最大 TPM 1,000,000。<sup><a href="#cite-56">[56]</a></sup>官方价格页显示，豆包 2.1 Pro 输入 6 元/百万 tokens、输出 30 元/百万 tokens，Turbo 输入 3 元/百万 tokens、输出 15 元/百万 tokens，并提供缓存命中与批量推理折扣。<sup><a href="#cite-57">[57]</a></sup>这说明团队不应只做 Demo 级试用，而应围绕真实需求吞吐、缓存命中率、长上下文成本和批处理设计 POC。</p>
+
+  <h3>结论四：Token 规模口径代表“从尝鲜到生产”的转折，但需区分更新时间</h3>
+  <p>官方活动页体验区仍显示豆包大模型“120万亿日均 token 使用量”，而 36氪专访和长江日报等会后报道提到火山引擎日均 Token 消耗量达 180 万亿。<sup><a href="#cite-54">[54]</a></sup><sup><a href="#cite-58">[58]</a></sup><sup><a href="#cite-59">[59]</a></sup>这一差异更可能来自页面更新时间、统计窗口或发布会前后口径变化，不应简单视为矛盾。对团队而言，关键不是 120 万亿还是 180 万亿，而是火山引擎已进入超大规模生产负载阶段，选型时应重点验证稳定性、限流、成本波动和服务可用性。</p>
+
+  <h3>结论五：Seedance 2.5 与版权平台把 AI 视频推向商业闭环</h3>
+  <p>长江日报报道提到 Seedance 2.5 支持 30 秒原生视频、50 个全模态素材、局部编辑，并预计 7 月上线；同一报道还提到周星驰 IP 授权和 AI 版权商业化平台。<sup><a href="#cite-59">[59]</a></sup>多家媒体与社区资料也围绕 30 秒、4K、50 素材和版权模板传播，但具体上线节奏、模板范围与商用授权边界仍需等待官方产品页确认。<sup><a href="#cite-60">[60]</a></sup>这意味着视频生成不再只是模型能力竞赛，而是开始进入“模型 + 工具 + 版权 + 分发”的完整产业链。</p>
+
+  <h3>结论六：Agent 基础设施的短板从模型转向上下文、记忆与工具治理</h3>
+  <p>OpenViking 官方文档将 OpenViking Service 定义为面向 AI Agents 的上下文数据库，核心理念是虚拟文件系统、分层上下文、目录递归检索和可观测自迭代。<sup><a href="#cite-42">[42]</a></sup>这与 Seed2.1 强调长程任务、跨工具执行、多文件处理相互呼应：模型能力提升后，企业真正的瓶颈会转向上下文组织、知识权限、工具调用安全和执行轨迹审计。团队若要做企业级 Agent，不应只选模型，还要同步设计记忆层、数据层和可追溯机制。</p>
+
+  <h3>结论七：TRAE/开发者工具的经验提示“AI 写代码 ≠ 团队效率同比例提升”</h3>
+  <p>网易转载雷峰网内容提到，TRAE 团队过去半年 90% 以上代码由 AI 生成，但人均需求吞吐量提升约 60%。<sup><a href="#cite-61">[61]</a></sup>这个差距非常重要：AI 能显著提高代码生成占比，但团队效率还受到需求澄清、架构约束、评审验证、上下文工程和团队记忆影响。因此，团队推进 AI Coding 时应把 Harness、规范、测试、评审和知识库建设放在同等优先级。</p>
+
+  <h3>结论八：飞连 AI 表明安全将成为 Agent 普及的前置条件</h3>
+  <p>飞连 v3.3.4 官方文档显示，数据安全智能体可过滤 75% 以上无风险日志，告警压缩比为 3%-5%；AI Agent 办公安全防护覆盖恶意 Skill 下载拦截、Agent 高危命令检测和提示词注入防护。<sup><a href="#cite-62">[62]</a></sup>这意味着企业并不会因为 Agent 能力变强就直接放开使用，反而会要求更细粒度的身份、终端、网络、数据和工具行为治理。安全能力不是附属模块，而是 AI 云原生架构能否进入核心业务的准入门槛。</p>
+
+  <h3>结论九：行业落地开始从“案例展示”走向“负载验证”</h3>
+  <p>长江日报提到 110 万企业/个人用户、200 家年 Token 调用量超 1 万亿企业，以及豆包座舱覆盖超 700 万辆车、50 余家车企、145 款车型、日均车内 AI 交互超 3000 万次等案例。<sup><a href="#cite-59">[59]</a></sup>这些数据如果按同一口径持续更新，将比单个客户 Logo 更能说明产业落地质量。团队做选型时，应从“有没有标杆客户”转向“是否有可持续负载、是否能进入业务闭环、是否形成付费或成本节约”。</p>
+
+  <h3>结论十：竞争下半场是交付力、成本结构和生态控制权</h3>
+  <p>雷峰网/网易报道将大会解读为大模型竞争下半场从拼规模转向证明价值，并特别提到谭待否认 Seedance 2.0 单月营收 10 亿元、短漫剧工具赛道占比 80% 等传闻。<sup><a href="#cite-61">[61]</a></sup>这说明行业正在从“传播数字”进入“商业核验”阶段：真正重要的是单位成本、交付稳定性、客户复购、开发者生态和版权合规。对报告而言，战略判断应更关注商业闭环，而非被未经证实的高收入传闻带偏。</p>
+
+  <div class="callout success">
+    <div class="callout-title">重构后的总判断</div>
+    <p>本次 FORCE 2026 的主线不是“字节又发了几个模型”，而是“火山引擎试图把模型、Agent、数据、安全、内容版权和开发者工具重新整合成 AI 云原生基础设施”。如果这个判断成立，团队下一步不应只做模型替换测试，而要围绕业务流程、成本模型、安全边界和组织协作方式设计完整 AI 改造路径。</p>
+  </div>
+</section>
+
+<!-- ===== 21. RISKS & VERIFICATION ===== -->
+<section id="risks-verification">
+  <span class="section-num">21 / RISKS & VERIFICATION</span>
+  <h2>争议口径、风险与待核验清单</h2>
+  <p class="section-desc">全网信息越密集，越需要把“已确认事实、合理推断、传播线索、未证实传闻”分开。以下内容用于指导后续持续跟踪，避免团队在选型、采购或对外分享时误用口径。</p>
+
+  <h3>关键争议口径</h3>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>事项</th>
+          <th>目前可见信息</th>
+          <th>判断</th>
+          <th>后续核验方式</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>日均 Token 调用量</td>
+          <td>官方活动页展示 120 万亿；媒体专访与新闻报道出现 180 万亿。<sup><a href="#cite-54">[54]</a></sup><sup><a href="#cite-58">[58]</a></sup><sup><a href="#cite-59">[59]</a></sup></td>
+          <td>疑似统计窗口或页面更新时间不同。报告正文可采用“媒体会后报道 180 万亿，官方活动页仍可见 120 万亿”的双口径表述。</td>
+          <td>等待火山引擎会后新闻稿、PPT 下载或官方产品页统一更新。</td>
+        </tr>
+        <tr>
+          <td>MaaS 市场份额 49.5%</td>
+          <td>多家媒体援引 IDC 口径称火山引擎在中国公有云 MaaS 市场份额为 49.5%。<sup><a href="#cite-59">[59]</a></sup></td>
+          <td>可引用为媒体报道中的 IDC 口径，但需要补充 IDC 原始报告名称、统计周期和市场定义。</td>
+          <td>核查 IDC 原始报告或火山引擎官方引用页。</td>
+        </tr>
+        <tr>
+          <td>Seedance 收入与赛道占比传闻</td>
+          <td>雷峰网/网易报道提到谭待否认“Seedance 2.0 单月营收 10 亿元”“短漫剧工具赛道占比 80%”等说法。<sup><a href="#cite-61">[61]</a></sup></td>
+          <td>不能作为事实写入商业规模判断，只能作为行业传闻与官方回应案例。</td>
+          <td>等待公司财务披露、采访原文、官方复盘或第三方监测报告。</td>
+        </tr>
+        <tr>
+          <td>Seedance 2.5 上线与授权边界</td>
+          <td>媒体报道预计 7 月上线，并提到周星驰 IP 与版权平台。<sup><a href="#cite-59">[59]</a></sup><sup><a href="#cite-60">[60]</a></sup></td>
+          <td>产品方向可信，但具体开放范围、计费、版权授权地域、二创限制仍需官方条款确认。</td>
+          <td>跟踪 Seedance 产品页、即梦/豆包/剪映入口、版权模板协议。</td>
+        </tr>
+        <tr>
+          <td>AI Coding 效率提升</td>
+          <td>TRAE 团队 AI 生成代码占比与人均需求吞吐提升之间存在明显差距。<sup><a href="#cite-61">[61]</a></sup></td>
+          <td>说明“生成量”不是唯一效率指标，必须把质量、测试、返工率和协作成本纳入评估。</td>
+          <td>团队内部 POC 需记录需求周期、缺陷率、评审时间、上线回滚率。</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3>对团队选型的风险提示</h3>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-icon blue">成本</div>
+      <h4>长上下文并不等于低成本</h4>
+      <p>256k 上下文适合复杂任务，但真实成本取决于输入长度、输出长度、思维链、缓存命中率与批量推理设计。POC 不能只看单次调用单价，应按完整业务流程核算。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon purple">稳定</div>
+      <h4>生产级 Agent 需要持续验证</h4>
+      <p>模型跨越质变点并不代表在所有团队场景中都稳定。企业内部知识、权限、系统接口和异常处理会显著影响最终交付质量。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon green">安全</div>
+      <h4>工具调用扩大攻击面</h4>
+      <p>Agent 能调用浏览器、文件、代码、企业系统后，提示词注入、恶意 Skill、高危命令和数据泄露会成为真实风险，需提前设计审计与拦截。</p>
+    </div>
+    <div class="card">
+      <div class="card-icon orange">版权</div>
+      <h4>视频生成需关注授权边界</h4>
+      <p>AI 版权商业化平台提高合规可能性，但不同 IP、素材、地域和分发平台的授权范围不同，市场团队不能默认所有生成内容都可商用。</p>
+    </div>
+  </div>
+
+  <div class="callout warning">
+    <div class="callout-title">后续跟踪清单</div>
+    <p><strong>一周内</strong>：核验 Seedance 2.5 正式上线页、豆包 2.1 API 文档更新、IDC 份额原始报告；<strong>一个月内</strong>：收集真实开发者使用反馈、行业客户案例复盘、版权平台模板条款；<strong>三个月内</strong>：用团队真实项目评估豆包 2.1、TRAE、HiAgent、飞连和 OpenViking 的组合价值。</p>
+  </div>
+</section>
+
+<!-- ===== 22. ACTION ITEMS ===== -->
 <section id="action">
-  <span class="section-num">19 / ACTION ITEMS</span>
+  <span class="section-num">22 / ACTION ITEMS</span>
   <h2>团队行动建议</h2>
   <p class="section-desc">基于本次大会风向标，以下为团队可落地的行动建议，按优先级排序。</p>
 
@@ -3382,6 +3579,42 @@ section {
         <li id="cite-53">
           <span class="src-title">火山引擎官方产品页，飞连零信任安全管理--保护 AI 每一次业务访问</span>
           <a class="src-url" href="https://www.volcengine.com/product/feilian/zt" target="_blank" rel="noopener">https://www.volcengine.com/product/feilian/zt</a>
+        </li>
+        <li id="cite-54">
+          <span class="src-title">火山引擎官方活动页，2026 火山引擎 FORCE 原动力大会：议程、展区、产品体验与门票信息</span>
+          <a class="src-url" href="https://www.volcengine.com/event/force-2606" target="_blank" rel="noopener">https://www.volcengine.com/event/force-2606</a>
+        </li>
+        <li id="cite-55">
+          <span class="src-title">ByteDance Seed 官方博客，Seed2.1 正式发布，深入 AI 生产力，2026-06-23</span>
+          <a class="src-url" href="https://seed.bytedance.com/zh/blog/seed2-1-officially-released-advancing-ai-productivity" target="_blank" rel="noopener">https://seed.bytedance.com/zh/blog/seed2-1-officially-released-advancing-ai-productivity</a>
+        </li>
+        <li id="cite-56">
+          <span class="src-title">火山引擎官方文档，火山方舟模型列表：Doubao Seed 2.1 模型 ID、上下文窗口与限流</span>
+          <a class="src-url" href="https://www.volcengine.com/docs/82379/1593702?lang=zh" target="_blank" rel="noopener">https://www.volcengine.com/docs/82379/1593702?lang=zh</a>
+        </li>
+        <li id="cite-57">
+          <span class="src-title">火山引擎官方文档，火山方舟模型价格：Doubao Seed 2.1 Pro / Turbo 计费口径</span>
+          <a class="src-url" href="https://www.volcengine.com/docs/82379/1544106?lang=zh" target="_blank" rel="noopener">https://www.volcengine.com/docs/82379/1544106?lang=zh</a>
+        </li>
+        <li id="cite-58">
+          <span class="src-title">36氪，专访火山引擎谭待：模型好对 MaaS 是最重要的事，豆包2.1算「上牌桌」了</span>
+          <a class="src-url" href="https://36kr.com/p/3865912900588548" target="_blank" rel="noopener">https://36kr.com/p/3865912900588548</a>
+        </li>
+        <li id="cite-59">
+          <span class="src-title">长江日报，火山引擎 FORCE 2026 相关报道：Token、MaaS份额、Seedance2.5、豆包座舱等信息</span>
+          <a class="src-url" href="https://cjrb.cjn.cn/h5/html5/2026-06/25/content_151733_3572301.htm" target="_blank" rel="noopener">https://cjrb.cjn.cn/h5/html5/2026-06/25/content_151733_3572301.htm</a>
+        </li>
+        <li id="cite-60">
+          <span class="src-title">36氪，火山引擎 FORCE 2026 时间线与产业解读：豆包临界点、Seedance2.5 与 AI 云原生</span>
+          <a class="src-url" href="https://36kr.com/p/3867066152713092" target="_blank" rel="noopener">https://36kr.com/p/3867066152713092</a>
+        </li>
+        <li id="cite-61">
+          <span class="src-title">网易转载雷峰网，火山引擎 FORCE 2026 解读：MaaS 价值、Seedance 传闻回应与 TRAE 开发效率</span>
+          <a class="src-url" href="https://c.m.163.com/news/a/L05GECH805118HA4.html" target="_blank" rel="noopener">https://c.m.163.com/news/a/L05GECH805118HA4.html</a>
+        </li>
+        <li id="cite-62">
+          <span class="src-title">火山引擎官方文档，飞连 v3.3.4 版本能力速览：数据安全智能体与 AI Agent 办公安全防护</span>
+          <a class="src-url" href="https://www.volcengine.com/docs/6427/504992?lang=zh" target="_blank" rel="noopener">https://www.volcengine.com/docs/6427/504992?lang=zh</a>
         </li>
       </ol>
     </div>
