@@ -1502,7 +1502,7 @@ section {
     </div>
     <div class="metric-strip">
       <div class="metric-chip"><strong>22</strong><span>深度章节</span></div>
-      <div class="metric-chip"><strong>63</strong><span>引用来源</span></div>
+      <div class="metric-chip"><strong>64</strong><span>引用来源</span></div>
       <div class="metric-chip"><strong>180万亿</strong><span>日均 Token 调用</span></div>
       <div class="metric-chip"><strong>49.5%</strong><span>MaaS 市场份额</span></div>
     </div>
@@ -1823,6 +1823,11 @@ section {
     <li><strong>256K 超长上下文</strong>：支持数百智能体协同作业</li>
     <li><strong>veRL 强化学习框架</strong>：支撑 HiAgent、Seedance 全链路自动迭代调优</li>
   </ul>
+
+  <h3>现场补充：从 Vibe Coding 到 SDD</h3>
+  <p>新上传的 TRAE 企业论坛现场照片进一步说明，火山引擎对 AI Coding 的定位并不是“让模型多写几行代码”，而是把研发方法拆成两个阶段：第一阶段是 <strong>Vibe Coding</strong>，适合灵感验证、静态页面、脚本页面和可视化探索，其核心是让开发者把精力放在顶层设计和功能构思上，用自然语言描述需求，让 AI 自动生成可执行代码；第二阶段是 <strong>SDD（规格驱动开发）</strong>，适合后端核心业务逻辑、金融交易系统、复杂算法实现和遗留系统重构等高严谨场景。<sup><a href="#cite-64">[64]</a></sup></p>
+  <p>现场材料把 SDD 拆成 Spec、Plan、Act、Fix 四步：先把业务目标、边界、验收标准沉淀为结构化规格；再由 AI 生成技术实现计划；随后把任务拆成可执行单元；最后在单元测试、集成测试和流水线验证中修复问题。这个框架补上了“AI 会写代码”与“代码能进生产”之间最关键的一层工程治理：<mark class="key">需求结构化、计划可解释、执行可追踪、质量可验证</mark>。<sup><a href="#cite-64">[64]</a></sup></p>
+  <p>从现场对比表看，Vibe Coding 更适合“短周期、低严谨性、输入为自然语言/截图/手绘图”的探索任务；SDD 则更适合“长周期、高严谨性、输入为 Markdown、标准化契约文件和体系化规范”的企业研发任务。结论不是二选一，而是分层使用：前者提升创意探索速度，后者承担工程交付与组织级复用。<sup><a href="#cite-64">[64]</a></sup></p>
 
   <h3>定价策略：成本颠覆</h3>
   <div class="table-wrap">
@@ -2437,9 +2442,12 @@ section {
 
   <h4>③ TRAE 企业论坛</h4>
   <p>Trae 与 Trae Work 独立端正式亮相专场。<strong>核心内容</strong>：Trae 秉持"agentic engineering"理念，打破传统 AI 编码工具的单一属性，不止提升编码效率，更贯穿产品需求、方案落地、代码开发、迭代复盘全流程。全新上线的 Trae Work 独立端实现研发与办公场景打通——支持模糊需求结构化梳理、语音对话生成方案、非技术人员零代码开发；搭载全链路安全合规体系（传输加密、租户隔离、行为审计、事后阻断）；一个账号可自由切换 IDE 研发模式与 Work 办公模式，一个后台统一管控知识库、安全策略。<sup><a href="#cite-23">[23]</a></sup><sup><a href="#cite-28">[28]</a></sup></p>
+  <p>新上传的现场照片把 TRAE 的边界讲得更清楚：TRAE IDE 的服务对象是研发工程师，核心场景是写代码，交付物是软件产品；TRAE Work 的服务对象扩展到全员，核心场景变成“用代码解决工作问题”，交付物转向工作效率与业务结果。现场提到的五大能力升级包括云端运行、Web/Desktop/Mobile 三端同步、专家级 Skill Market、语音讨论 / Browser use / Computer use 等新交互体验，以及企业版知识库接入、AI 能理解业务背景、数据不出域与权限统一管控。<sup><a href="#cite-64">[64]</a></sup></p>
+  <p>现场还展示了“产品自己跑数、自己出原型”的产品工作流：从竞品研究、交互原型到需求文档，AI 可辅助沉淀结构化信息、生成可运行 Demo，并输出 PRD 初稿与用户故事；运营侧则覆盖数据日报、内容批量生产、自动化工作流和用户触达。由此看，TRAE Work 的战略意义不是给非研发人员一个低代码玩具，而是把 Coding 能力外溢到产品、运营、设计和业务岗位。<sup><a href="#cite-64">[64]</a></sup></p>
+  <p>现场披露的研发成果也值得纳入判断：基础编码 AI 可全面接管后，需求交付周期从 4 个月压缩到 2 个月；AI 代码采纳率分别达到 78% 与 98%；交付周期缩短一半；Bug 率下降 25%；单元测试覆盖率提升 30%；代码安全达到 95%+；业务规模出现 10 倍与 20 倍级增长。由于这些数字来自现场演示口径，仍需后续用真实团队项目复核，但它们已经说明火山引擎正在用“效率、质量、业务价值”三类指标重新定义 AI 研发工具的成效。<sup><a href="#cite-64">[64]</a></sup></p>
   <div class="callout">
     <div class="callout-title">团队关注点</div>
-    <p>Trae Work 的"研发+办公双模式"设计非常适合跨职能团队——开发用 IDE 模式写代码，产品/运营用 Work 模式做方案和文档，同一个后台统一管控。非技术人员零代码开发能力可大幅降低 AI 应用搭建门槛。全链路安全合规体系（传输加密、租户隔离、行为审计）是企业级使用的关键保障。</p>
+    <p>Trae Work 的"研发+办公双模式"设计非常适合跨职能团队——开发用 IDE 模式写代码，产品/运营用 Work 模式做方案、原型、文档和自动化，同一个后台统一管控。团队如果试点 TRAE，不应只看“生成了多少代码”，还要同步记录需求澄清时间、测试覆盖率、返工次数、业务交付周期和跨岗位协作效率。</p>
   </div>
 
   <h4>④ 飞连论坛</h4>
@@ -3200,7 +3208,8 @@ section {
   <p>OpenViking 官方文档将 OpenViking Service 定义为面向 AI Agents 的上下文数据库，核心理念是虚拟文件系统、分层上下文、目录递归检索和可观测自迭代。<sup><a href="#cite-42">[42]</a></sup>现场照片进一步显示，ArkClaw/AIOS 的企业级组件已覆盖身份、策略、注册中心、网关、记忆、观察、沙盒、评测、知识和运行时等环节。<sup><a href="#cite-63">[63]</a></sup>这与 Seed2.1 强调长程任务、跨工具执行、多文件处理相互呼应：模型能力提升后，企业真正的瓶颈会转向上下文组织、知识权限、工具调用安全和执行轨迹审计。团队若要做企业级 Agent，不应只选模型，还要同步设计记忆层、数据层和可追溯机制。</p>
 
   <h3>结论七：TRAE/开发者工具的经验提示“AI 写代码 ≠ 团队效率同比例提升”</h3>
-  <p>网易转载雷峰网内容提到，TRAE 团队过去半年 90% 以上代码由 AI 生成，但人均需求吞吐量提升约 60%。<sup><a href="#cite-61">[61]</a></sup>这个差距非常重要：AI 能显著提高代码生成占比，但团队效率还受到需求澄清、架构约束、评审验证、上下文工程和团队记忆影响。因此，团队推进 AI Coding 时应把 Harness、规范、测试、评审和知识库建设放在同等优先级。</p>
+  <p>网易转载雷峰网内容提到，TRAE 团队过去半年 90% 以上代码由 AI 生成，但人均需求吞吐量提升约 60%。<sup><a href="#cite-61">[61]</a></sup>新上传的现场照片进一步补全了原因：火山引擎并没有把 AI Coding 简化为“提示词生成代码”，而是把它拆成 Vibe Coding、SDD、Skills 标准配置、工具链接入、审计回溯和 SLA 监测等一整套工程体系。<sup><a href="#cite-64">[64]</a></sup>这个差距非常重要：AI 能显著提高代码生成占比，但团队效率还受到需求澄清、架构约束、评审验证、上下文工程和团队记忆影响。因此，团队推进 AI Coding 时应把 Harness、规范、测试、评审和知识库建设放在同等优先级。</p>
+  <p>对团队而言，真正值得复制的不是某个单点工具，而是“探索型 Vibe Coding + 生产型 SDD + 可复用 Skills + 企业知识库 + 权限审计”的组合。它把个人开发者变成“超级个人”，也把原本分散在研发、产品、测试、运营之间的流程重新组织为 AI 可参与、可度量、可治理的工作流。<sup><a href="#cite-64">[64]</a></sup></p>
 
   <h3>结论八：飞连 AI 表明安全将成为 Agent 普及的前置条件</h3>
   <p>飞连 v3.3.4 官方文档显示，数据安全智能体可过滤 75% 以上无风险日志，告警压缩比为 3%-5%；AI Agent 办公安全防护覆盖恶意 Skill 下载拦截、Agent 高危命令检测和提示词注入防护。<sup><a href="#cite-62">[62]</a></sup>这意味着企业并不会因为 Agent 能力变强就直接放开使用，反而会要求更细粒度的身份、终端、网络、数据和工具行为治理。安全能力不是附属模块，而是 AI 云原生架构能否进入核心业务的准入门槛。</p>
@@ -3628,6 +3637,10 @@ section {
         </li>
         <li id="cite-63">
           <span class="src-title">用户上传现场照片，FORCE 2026 ArkClaw / AIOS / AgentKit 相关舞台内容：生产型、决策辅助型、流程执行型 Agent，企业级 AIOS 与 AgentKit 组件</span>
+          <span class="src-url">User-uploaded onsite photos</span>
+        </li>
+        <li id="cite-64">
+          <span class="src-title">用户上传现场照片，FORCE 2026 TRAE 企业论坛 / 银河 AI Coding 相关舞台内容：Vibe Coding、SDD 规格驱动开发、TRAE Work、Skills 标准配置与 AI 研发成果</span>
           <span class="src-url">User-uploaded onsite photos</span>
         </li>
       </ol>
